@@ -1,0 +1,11 @@
+echo "currently logged user is $user"
+echo "home directory is $home"
+echo "current shell is $shell"
+echo "current working directory is $pwd"
+echo "operating system type is $ostype"
+
+
+
+
+
+                                                                                                                                  	 

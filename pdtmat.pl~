@@ -1,0 +1,87 @@
+use strict;
+my @A;
+my @b;
+my @C;
+my $r;
+my $k;
+my $c;
+my $i;
+my $j;
+print "Enter the no of rows of matrix ";
+$r = <stdin>;
+print "Enter the no of columns of matrix ";
+$c= <stdin>;
+print "Enter the elements of first matrix";
+for($i=0;$i<$r;$i++)
+{
+  for($j=0;$j<$c;$j++)
+  {
+    $A[$i][$j]=<stdin>;
+  }
+}
+ 
+print "\n";
+ 
+ 
+print "Enter the elements of second matrix";
+for($i=0;$i<$r;$i++)
+{
+  for($j=0;$j<$c;$j++)
+  {
+    $B[$i][$j] = <stdin>;
+  }
+}
+print "\n";  
+ 
+for($i=0;$i<$r;$i++)
+{
+  for($j=0;$j<$c;$j++)
+  {
+    $C[$i][$j]=0;
+    for($k=0;$k<$c;$k++)
+    {
+       $C[$i][$j]+=$A[$i][$k]*$B[$k][$j];  
+    }
+  }
+}
+ 
+ 
+print "\n";
+print "The first matrix is:";
+
+for($i=0;$i<$r;$i++)
+{
+  for($j=0;$j<$c;$j++)
+  {
+    print $A[$i][$j];
+    print "\t";
+  }
+  print "\n";
+}
+
+print "The second matrix is:";
+
+for($i=0;$i<$r;$i++)
+{
+  for($j=0;$j<$c;$j++)
+  {
+    print $B[$i][$j];
+    print "\t";
+  }
+  print "\n";
+}
+ 
+print"The product of the matrix is";
+print "\n";
+for($i=0;$i<$r;$i++)
+{
+  for($j=0;$j<$c;$j++)
+  {
+    print $C[$i][$j];
+    print "\t";
+  }
+  print "\n";
+}
+ 
+print "\n";
+
